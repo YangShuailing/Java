@@ -1,9 +1,9 @@
 public class TestString{
 	public static void main(String[] args){
 		String s = "asdhiohfshfksndkfnJkiKNNIONNMKki123123824032";
-		int lCount, uCount, oCount;
+		int iCount=0, uCount=0, oCount=0;
 		for(int i=0; i<s.length();i++){
-			char c = s.CharAt(i);
+			char c = s.charAt(i);
 			if (c>='a' && c<='z'){
 				iCount++;
 			}else if(c>='A' && c<='Z'){
@@ -13,7 +13,11 @@ public class TestString{
 			}
 			
 		}
-		System.out.println("小写字母"+iCount+" "+"大写字母"+uCount+" "+"数字"+oCount);
+		System.out.println(iCount+" "+ uCount+" "+oCount);
+	
+	
+		
 	}
+	
 	
 }
