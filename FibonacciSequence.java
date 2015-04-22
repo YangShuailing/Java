@@ -1,13 +1,13 @@
 public class FibonacciSequence{
 	public static void main(String[] Args){
-		System.out.println("µÚ1¸öÍÃ×ÓÊı£º1");
-		System.out.println("µÚ2¸öÍÃ×ÓÊı£º1");
+		System.out.println("ç¬¬1ä¸ªå…”å­æ•°ï¼š1");
+		System.out.println("ç¬¬2ä¸ªå…”å­æ•°ï¼š1");
 		int f1 = 1, f2 = 1,f, M = 24;
 		for(int i=3; i<=24;i++){
 			f = f2;
 			f2 = f1+f2;
 			f1 = f;
-			System.out.println("µÚ"+i+"¸öÔÂÍÃ×ÓÊı"+f2);
+			System.out.println("ç¬¬"+i+"ä¸ªæœˆå…”å­æ•°"+f2);
 		}
 	}
 }
