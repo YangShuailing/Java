@@ -2,7 +2,7 @@
 import java.io.*;
 import java.net.*;
 import java.applet.Applet;
-public class TalkServer
+public class Server
 {
 	public static void main(String args[])
 	{
@@ -33,11 +33,12 @@ public class TalkServer
 			line = sin.readLine();
 			while (!line.equals("bye"))	
 			{
+				line = sin.readLine();
 				os.println(line);
 				os.flush();
 				System.out.println("Server:" + line);
 				System.out.println("Client:" + is.readLine());
-				line = sin.readLine();
+				
 			}
 
 			is.close();
