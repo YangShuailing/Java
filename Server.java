@@ -1,22 +1,53 @@
-import java.io.IOException;
-import java.io.PrintStream;
-import java.net.ServerSocket;
-import java.net.Socket;
 
-public class Server {
-	public static void main(String[]args) throws IOException{
-		//创建一个ServerSocket，用于监听客户端Socket的连接请求
-		ServerSocket ss=new ServerSocket(30000);
-		//采用循环不断接受来自客户端的请求
-		while(true){
-			//每当接受到客户端Socket的请求，服务器端也对应产生一个Socket
-			Socket s=ss.accept();
-			//将Socket对应的输出流包装成PrintStream
-			PrintStream ps=new PrintStream(s.getOutputStream());
-			ps.println("您好，您收到了服务器的新年祝福");
-			//关闭输出流，关闭Socket
-			ps.close();
-			s.close();
+import java.io.*;
+import java.net.*;
+import java.applet.Applet;
+public class TalkServer
+{
+	public static void main(String args[])
+	{
+		try
+		{
+			ServerSocket server = null;
+			try
+			{
+				server = new ServerSocket(4700);
+			}catch(Exception e)
+			{
+				System.out.println("can not listen to:" + e);
+			}
+			Socket socket = null;
+			try
+			{
+				socket = server.accept();
+			}catch(Exception e)
+			{
+				System.out.println("Error:" + e);
+			}
+			String line;
+			BufferedReader is = new BufferedReader(new InputStreamReader(
+				socket.getInputStream()));
+			PrintWriter os = new PrintWriter(socket.getOutputStream());
+			BufferedReader sin = new BufferedReader(new InputStreamReader(System.in));
+			System.out.println("Client:" + is.readLine());
+			line = sin.readLine();
+			while (!line.equals("bye"))	
+			{
+				os.println(line);
+				os.flush();
+				System.out.println("Server:" + line);
+				System.out.println("Client:" + is.readLine());
+				line = sin.readLine();
+			}
+
+			is.close();
+			os.close();
+			socket.close();
+			server.close();
+		}catch(Exception e)
+		{
+			System.out.println("Error" + e);
 		}
 	}
 }
+			
