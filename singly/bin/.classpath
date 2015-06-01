@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Socket/Chat/Chat1.0/|Socket/|io/|4/abstract/src/|Socket/Chat/Chat0.5/|Socket/Chat/Chat0.7/|singly/src/|Socket/Chat/Chat0.3/" kind="src" path=""/>
+	<classpathentry kind="src" path="4/abstract/src"/>
+	<classpathentry kind="src" path="io"/>
+	<classpathentry kind="src" path="singly/src"/>
+	<classpathentry excluding="Chat/Chat1.0/|Chat/Chat0.5/|Chat/Chat0.7/|Chat/Chat0.3/" kind="src" path="Socket"/>
+	<classpathentry kind="src" path="Socket/Chat/Chat0.3"/>
+	<classpathentry kind="src" path="Socket/Chat/Chat0.5"/>
+	<classpathentry kind="src" path="Socket/Chat/Chat0.7"/>
+	<classpathentry kind="src" path="Socket/Chat/Chat1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="singly/bin"/>
+</classpath>

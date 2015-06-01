@@ -1,0 +1,64 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/ChatClient$1.class
+/ChatClient$2.class
+/ChatClient$ReceiveThread.class
+/ChatClient.class
+/ChatServer$1.class
+/ChatServer$ClientConn.class
+/ChatServer.class
+/Node.class
+/Server.class
+/SingleLinkedList.class
+/TCPClient.class
+/TCPServer.class
+/TalkClient.class
+/TestClient.class
+/TestServer.class
+/TestSockClient.class
+/TestSockServer.class
+/TestUDPClient.class
+/TestUDPServer.class
+/singly/
+/5/
