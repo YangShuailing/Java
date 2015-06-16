@@ -43,7 +43,12 @@ Temporary Items
 .apdisk
 /4/
 /5/
+/.classpath
+/.gitattributes
+/.gitignore
+/.project
 /BasicContainer.class
+/Chat/
 /ChatClient$1.class
 /ChatClient$2.class
 /ChatClient$ReceiveThread.class
@@ -117,7 +122,10 @@ Temporary Items
 /Vector.class
 /deff.class
 /input.class
+/leetcode/
 /lianxi24.class
+/override1/
 /rec.class
-/xml/
 /singly/
+/testobjectio.dat
+/xml/
