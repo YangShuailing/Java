@@ -41,19 +41,14 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/4/
+/5/
 /.classpath
 /.gitattributes
 /.gitignore
 /.project
-/4/
-/5/
-/Chat/
-/Java/
-/Test.txt
-/leetcode/
-/override1/
-/singly/
 /BasicContainer.class
+/Chat/
 /ChatClient$1.class
 /ChatClient$2.class
 /ChatClient$ReceiveThread.class
@@ -75,6 +70,7 @@ Temporary Items
 /FileWriter1.class
 /HelloWorld.class
 /Iotest.class
+/Java/
 /Kid.class
 /KidCircle.class
 /Lottery.class
@@ -126,6 +122,10 @@ Temporary Items
 /Vector.class
 /deff.class
 /input.class
+/leetcode/
 /lianxi24.class
+/override1/
 /rec.class
+/singly/
+/testobjectio.dat
 /xml/
